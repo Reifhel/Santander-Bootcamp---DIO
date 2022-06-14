@@ -1,8 +1,21 @@
 body{
     background-color: #f7f7f7;
+    font-family: Verdana;
+    max-width: 900px;
+    margin: auto;
 }
 
 #title, .post_title, .subtitle{
+    color: #505050;
+}
+
+#title{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: underline;
     color: #505050;
 }
 
@@ -16,11 +29,14 @@ body{
 .post_content{
     margin: 0;
     margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: justify;
 }
 
 .post_image{
     margin: 0;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .post{
@@ -34,4 +50,13 @@ body{
 .foto{
     border-radius: 50px;
     border: 3px solid #505050;
+}
+
+.lista_contatos{
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.lista_contatos li a{
+    text-decoration: none;
 }
