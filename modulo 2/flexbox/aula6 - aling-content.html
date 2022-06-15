@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Fundamentos - align-content </title>
+
+        <style>
+
+            .container{
+                display: flex;
+                height: 400px;
+                max-width: 300px;
+                flex-wrap: wrap;
+                border: 1px solid black;
+            }
+
+            .item{
+                background-color: purple;
+                color: white;
+                text-align: center;
+                flex: 1;
+                padding: 0 5px;
+                margin: 5px;
+            }
+
+            .stretch{
+                align-content: stretch;
+            }
+
+            .center{
+                align-content: center;
+            }
+
+            .flex-start{
+                align-content: flex-start;
+            }
+
+            .flex-end{
+                align-content: flex-end;
+            }
+
+            .space-around{
+                align-content: space-around;
+            }
+
+            .space-between{
+                align-content: space-between;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <p>Stretch</p>
+
+        <div class="container stretch">
+
+            <div class="item">Atirei o pau</div>
+            <div class="item">no gato-to mas o</div>
+            <div class="item">gato-to não morreu-reu</div>
+            <div class="item">dona chica</div>
+            <div class="item">admirou-se do</div>
+            <div class="item">do berro</div>
+            <div class="item">que o gato deu</div>
+
+        </div>
+
+        <p>Center</p>
+
+        <div class="container center">
+
+            <div class="item">Atirei o pau</div>
+            <div class="item">no gato-to mas o</div>
+            <div class="item">gato-to não morreu-reu</div>
+            <div class="item">dona chica</div>
+            <div class="item">admirou-se do</div>
+            <div class="item">do berro</div>
+            <div class="item">que o gato deu</div>
+
+        </div>
+
+        <p>flex-start</p>
+
+        <div class="container flex-start">
+
+            <div class="item">Atirei o pau</div>
+            <div class="item">no gato-to mas o</div>
+            <div class="item">gato-to não morreu-reu</div>
+            <div class="item">dona chica</div>
+            <div class="item">admirou-se do</div>
+            <div class="item">do berro</div>
+            <div class="item">que o gato deu</div>
+
+        </div>
+
+        <p>flex-end</p>
+
+        <div class="container flex-end">
+
+            <div class="item">Atirei o pau</div>
+            <div class="item">no gato-to mas o</div>
+            <div class="item">gato-to não morreu-reu</div>
+            <div class="item">dona chica</div>
+            <div class="item">admirou-se do</div>
+            <div class="item">do berro</div>
+            <div class="item">que o gato deu</div>
+
+        </div>
+
+        <p>space-around</p>
+
+        <div class="container space-around">
+
+            <div class="item">Atirei o pau</div>
+            <div class="item">no gato-to mas o</div>
+            <div class="item">gato-to não morreu-reu</div>
+            <div class="item">dona chica</div>
+            <div class="item">admirou-se do</div>
+            <div class="item">do berro</div>
+            <div class="item">que o gato deu</div>
+
+        </div>
+
+        <p>space-between</p>
+
+        <div class="container space-between">
+
+            <div class="item">Atirei o pau</div>
+            <div class="item">no gato-to mas o</div>
+            <div class="item">gato-to não morreu-reu</div>
+            <div class="item">dona chica</div>
+            <div class="item">admirou-se do</div>
+            <div class="item">do berro</div>
+            <div class="item">que o gato deu</div>
+
+        </div>
+
+    </body>
+
+</html>

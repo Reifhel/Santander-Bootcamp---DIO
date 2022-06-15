@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Fundamentos - Align-items </title>
+        
+        <style>
+
+            .container{
+                max-width: 350px;
+                border: 1px solid black;
+                display: flex;
+            }
+
+            .item{
+                background-color: purple;
+                text-align: center;
+                margin: 5px;
+                color: white;
+                flex: 1;
+            }
+
+            .center{
+                align-items: center;
+            }
+            .stretch{
+                align-items: stretch;
+            }
+
+            .flex-start{
+                align-items: flex-start;
+            }
+
+            .flex-end{
+                align-items: flex-end;
+            }
+
+            .baseline{
+                align-items: baseline;
+            }
+
+            .column{
+                flex-direction: column;
+            }
+
+            .central{
+                height: 300px;
+                justify-content: center;
+            }
+
+            .central .item{
+                flex: 0;
+                padding: 20px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1> -- Linha / row -- </h1>
+        <p>Center</p>
+
+        <section class="container center">
+
+            <div class="item">item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p>Stretch</p>
+
+        <section class="container stretch">
+
+            <div class="item">item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p>flex-start</p>
+        
+        <section class="container flex-start">
+
+            <div class="item">item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p>flex-end</p>
+
+        <section class="container flex-end">
+
+            <div class="item">item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p>Baseline</p>
+
+        <section class="container baseline">
+
+            <div class="item"><br>item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <h1> -- Colunas / Columns -- </h1>
+
+        <section class="container center column">
+
+            <div class="item">item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p>Stretch</p>
+
+        <section class="container stretch column">
+
+            <div class="item">item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p>flex-start</p>
+        
+        <section class="container flex-start column">
+
+            <div class="item">item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p>flex-end</p>
+
+        <section class="container flex-end column">
+
+            <div class="item">item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p>Baseline</p>
+
+        <section class="container baseline column">
+
+            <div class="item"><br>item 1</div>
+            <div class="item">pato pato pato pato pato pato</div>
+            <div class="item">imagine um texto muito lindo aqui dentro</div>
+
+        </section>
+
+        <p> Alinhamento central a pagina </p>
+
+        <section class="container central center">
+
+            <div class="item">
+                Atirei o pau no gato-to mas o gato-to não morreu-reu
+            </div>
+
+        </section>
+
+    </body>
+
+</html>
