@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fundamentos - flex grow </title>
+
+    <style>
+
+        .flex-container{
+            border: 1px solid black;
+            max-width: 300px;
+            display: flex;
+        }
+        .item{
+            background-color: purple;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+        .fg-3{
+            flex-grow: 3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p>flex grow 0</p>
+    <div class="flex-container">
+
+        <div class="fg-0 item">a</div>
+        <div class="fg-0 item">b</div>
+        <div class="fg-0 item">c</div>
+        <div class="fg-0 item">d</div>
+
+    </div>
+
+    <p>flex grow 1</p>
+    <div class="flex-container">
+
+        <div class="fg-1 item">a</div>
+        <div class="fg-1 item">b</div>
+        <div class="fg-1 item">c</div>
+        <div class="fg-1 item">d</div>
+
+    </div>
+
+    <p>flex grow 1-2-2-1</p>
+    <div class="flex-container">
+
+        <div class="fg-1 item">a</div>
+        <div class="fg-2 item">b</div>
+        <div class="fg-2 item">c</div>
+        <div class="fg-1 item">d</div>
+
+    </div>
+
+    <p>flex grow conteudos distindos</p>
+    <div class="flex-container">
+
+        <div class="fg-2 item">aaaa</div>
+        <div class="fg-2 item">bbb</div>
+        <div class="fg-2 item">cc</div>
+        <div class="fg-2 item">d</div>
+
+    </div>
+
+</body>
+
+</html>
