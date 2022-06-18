@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-self</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            max-width: 350px;
+        }
+        .item{
+            background-color: purple;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+        .center{
+            align-self: center;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .coluna{
+            flex-direction: column;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>-- LINHAS --</h1>
+    <p> align-self - auto </p>
+    <section class="container">
+        <div class="item auto">aaa</div>
+        <div class="item auto">b</div>
+        <div class="item auto">cchasudoba sdaodoas odboabdo</div>
+        <div class="item auto">eeee</div>
+    </section>
+
+    <p> align-self - stretch </p>
+    <section class="container">
+        <div class="item stretch">aaa</div>
+        <div class="item stretch">b</div>
+        <div class="item stretch">cchasudoba sdaodoas odboabdo</div>
+        <div class="item stretch">eeee</div>
+    </section>
+
+    <p> align-self - flex-end </p>
+    <section class="container">
+        <div class="item end">aaa</div>
+        <div class="item end">b</div>
+        <div class="item end">cchasudoba sdaodoas odboabdo</div>
+        <div class="item end">eeee</div>
+    </section>
+
+    <p> align-self - flex-start </p>
+    <section class="container">
+        <div class="item start">aaa</div>
+        <div class="item start">b</div>
+        <div class="item start">cchasudoba sdaodoas odboabdo</div>
+        <div class="item start">eeee</div>
+    </section>
+
+    <p> align-self - baseline </p>
+    <section class="container">
+        <div class="item baseline">aaa</div>
+        <div class="item baseline">b</div>
+        <div class="item baseline">cchasudoba sdaodoas odboabdo</div>
+        <div class="item baseline">eeee</div>
+    </section>
+
+    <p> align-self - center </p>
+    <section class="container">
+        <div class="item center">aaa</div>
+        <div class="item center">b</div>
+        <div class="item center">cchasudoba sdaodoas odboabdo</div>
+        <div class="item center">eeee</div>
+    </section>
+
+    <p> align-self - mix </p>
+    <section class="container">
+        <div class="item center">aaa</div>
+        <div class="item stretch">b</div>
+        <div class="item end">cchasudoba sdaodoas odboabdo</div>
+        <div class="item start">eeee</div>
+    </section>
+
+    <h1>-- COLUNAS --</h1>
+    <p> align-self - auto </p>
+    <section class="container coluna">
+        <div class="item auto">aaa</div>
+        <div class="item auto">b</div>
+        <div class="item auto">cchasudoba sdaodoas odboabdo</div>
+        <div class="item auto">eeee</div>
+    </section>
+
+    <p> align-self - stretch </p>
+    <section class="container coluna">
+        <div class="item stretch">aaa</div>
+        <div class="item stretch">b</div>
+        <div class="item stretch">cchasudoba sdaodoas odboabdo</div>
+        <div class="item stretch">eeee</div>
+    </section>
+
+    <p> align-self - flex-end </p>
+    <section class="container coluna">
+        <div class="item end">aaa</div>
+        <div class="item end">b</div>
+        <div class="item end">cchasudoba sdaodoas odboabdo</div>
+        <div class="item end">eeee</div>
+    </section>
+
+    <p> align-self - flex-start </p>
+    <section class="container coluna">
+        <div class="item start">aaa</div>
+        <div class="item start">b</div>
+        <div class="item start">cchasudoba sdaodoas odboabdo</div>
+        <div class="item start">eeee</div>
+    </section>
+
+    <p> align-self - baseline </p>
+    <section class="container coluna">
+        <div class="item baseline">aaa</div>
+        <div class="item baseline">b</div>
+        <div class="item baseline">cchasudoba sdaodoas odboabdo</div>
+        <div class="item baseline">eeee</div>
+    </section>
+
+    <p> align-self - center </p>
+    <section class="container coluna">
+        <div class="item center">aaa</div>
+        <div class="item center">b</div>
+        <div class="item center">cchasudoba sdaodoas odboabdo</div>
+        <div class="item center">eeee</div>
+    </section>
+
+    <p> align-self - mix </p>
+    <section class="container coluna">
+        <div class="item center">aaa</div>
+        <div class="item stretch">b</div>
+        <div class="item end">cchasudoba sdaodoas odboabdo</div>
+        <div class="item start">eeee</div>
+    </section>
+
+
+</body>
+
+</html>
