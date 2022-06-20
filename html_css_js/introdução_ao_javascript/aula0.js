@@ -16,3 +16,16 @@ function soma(a,b){
     console.log(a+b); // print no console
     return a + b;
 }
+
+function returnEvenVales(array){
+    let evenNum = [];
+    for(let i = 0; i < array.length; i++){
+        if(array[i]%2 === 0){
+            evenNum.push(array[i])
+        }
+    }
+    console.log('Os numeros pares são: ', evenNum)
+}
+
+let array = [1,2,3,4,5,6,7,8];
+returnEvenVales(array);
