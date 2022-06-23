@@ -27,7 +27,7 @@ OPERADORES --
         ==      igual a
         ===     mesmo valor e mesmo tipo
         !=      diferença
-        !===    tipos e valores diferentes
+        !==    tipos e valores diferentes
         >       maior que
         <       menor que
         >=      maior ou igual a
