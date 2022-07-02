@@ -1,6 +1,12 @@
 var currentNumberWrapper = document.getElementById('currentNumber');
 var currentNumber = 0;
 
+const botaoAumenta = document.getElementById('adicionar');
+const botaoDiminui = document.getElementById('subtrair');
+
+botaoAumenta.addEventListener('click', increment);
+botaoDiminui.addEventListener('click', decrement);
+
 function verificar(){
 
     if(currentNumber < 0){
