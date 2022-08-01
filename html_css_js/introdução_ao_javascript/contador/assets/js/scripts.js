@@ -13,9 +13,11 @@ function verificar(){
         currentNumberWrapper.style.color = 'red';
     }
     else{
-        currentNumberWrapper.style.color = 'white';
+        currentNumberWrapper.style.color = 'white'; 
     }
 
+
+    document.body.style.background  = gerarCor();
 }
 
 function increment(){
@@ -28,4 +30,12 @@ function decrement(){
     currentNumber = currentNumber - 1;
     currentNumberWrapper.innerHTML = currentNumber;
     verificar();
+}
+
+function gerarCor(opacidade = 1){
+    let r = Math.random() * 255;
+   let g = Math.random() * 255;
+   let b = Math.random() * 255;
+
+   return `rgba(${r}, ${g}, ${b}, ${opacidade})`;
 }
